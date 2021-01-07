@@ -1,0 +1,178 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe Tiot</title>
+<link href="{% static 'css/lecker_library.css' %}" rel="stylesheet">
+<link href="{% static 'fonts/themify-icons.css' %}" rel="stylesheet">
+<link href="{% static 'fonts/selima/stylesheet.css' %}" rel="stylesheet">
+<link href="{% static 'css/lecker_style.css' %}" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lato" rel="stylesheet">
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly" defer ></script>
+</head>
+<body class="lec_france">
+<div class="lec_page" id="lec_page">
+    <a href="#lec_page" class="lec_top lec_go"><b class="ti ti-angle-up"></b></a>
+    <header>    
+        <div class="container">   
+            <a href="http://lecker.maskandesign.com/" class="lec_logo">CAFE TIOT <i><span>THE ROOF TOP</span><span>GARDEN CAFE</span></i></a>
+            <div class="lec_main_menu">
+                
+                <div class="lec_main_menu_icon">
+                    <i></i><i></i><i></i><i></i>
+                    <b>Menu</b>
+                    <b class="lec_main_menu_icon_b">Back</b>
+                </div>
+            </div>
+            <div class="lec_main_menu_content lec_image_bck" data-color="rgba(0,0,0,0.9)" data-image="{% static 'images/resta/shutterstock_384835423.jpg' %}">
+                <div class="lec_over" data-color="#000" data-opacity="0.8"></div>
+            </div>
+
+            <div class="lec_main_menu_content_menu lec_wht_txt text-right">
+                <div class="container">
+                    <ul>
+                        <a href="{% url 'home' %}">Home</a>
+                        <a href="{% url 'about' %}">About</a>
+                        <a href="{% url 'menu' %}">Menu</a>
+                        <a href="{% url 'service' %}">Service</a>
+                        <li class="lec_parent"><a href="#">Blog</a></li>
+                        <li class="lec_parent"><a href="#">Event & Offer</a></li>
+                        <a href="{% url 'contact' %}">Contact</a>
+                    </ul>
+                    <div class="lec_main_menu_content_menu_copy">
+                        <p>© CAFE TIOT 2017</p>
+                        <div class="lec_footer_social">
+                            <a href="https://www.facebook.com/cafeToit/"><i class="ti ti-facebook lec_icon_box"></i></a>
+                            <a href="https://www.instagram.com/cafe_toit/"><i class="ti ti-instagram lec_icon_box"></i></a>
+                            <a href="https://twitter.com/CafetoitH"><i class="ti ti-twitter lec_icon_box"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="lec_slider lec_slider_inside lec_image_bck lec_fixed lec_wht_txt" data-stellar-background-ratio="0.3" data-image="{% static 'images/resta/shutterstock_430097278.jpg' %}">
+        <div class="lec_slider_firefly" data-total="30" data-min="1" data-max="3"></div>
+        <div class="lec_over" data-color="#000" data-opacity="0.8"></div>
+        <div class="container">
+            <div class="lec_slide_txt lec_slide_center_middle text-center">
+                <img src="images/bbq/bbq_logo.png" alt="" height="180"><br>
+                <div class="lec_gold">Contact Us</div>
+                <div class="lec_slide_subtitle">Cafe Toit <br>The Roof Top Garden Restraunt</div>
+            </div>
+        </div>
+    </div>
+    <section id="lec_content" class="lec_content">
+        <section class="lec_section lec_section_no_overlay">
+                <div class="lec_over" data-color="#333" data-opacity="0"></div>
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-md-9 lec_animation_block lec_map_hidden_top" data-bottom-top="transform:translate3d(0px, 80px, 0px)" data-top-bottom="transform:translate3d(0px, -80px, 0px)">
+                           <div class="lec_map_container">
+                                <iframe width="781" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=cafetoit&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5 lec_animation_block lec_animation_abs_block lec_posr lec_image_bck" data-bottom-top="transform:translate3d(0px, 0px, 0px)" data-top-bottom="transform:translate3d(0px, 80px, 0px)" data-image="{% static 'images/main_back.jpg' %}">
+
+                            <div class="lec_over" data-color="#000" data-opacity="0.05"></div>
+
+                            <div class="lec_parallax_menu lec_image_bck lec_fixed">
+                                <h2 class="lec_gold lec_title_counter">Directions</h2>
+                                <h3 class="lec_gold_subtitle">Our Cafe Toit Locations</h3>
+                                <p>Cafe Tiot Restaurant is located in above Woodland Showroom.</p>
+                                <a href="#" class="btn">Contact Cafe Tiot Restaurant <i class="ti ti-email"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>        
+                
+        </section>
+
+        <section class="lec_section lec_section_no_overlay">
+                <div class="lec_over" data-color="#333" data-opacity="0.05"></div>
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-md-10 lec_animation_block lec_wht_txt" data-bottom-top="transform:translate3d(0px, 80px, 0px)" data-top-bottom="transform:translate3d(0px, -80px, 0px)">
+                            <div class="lec_virtual_close"><i class="ti ti-close"></i></div>
+                            <div class="lec_virtual_play lec_virtual_play_black lec_image_bck">
+
+                                <div class="lec_slide_txt lec_slide_left_middle">
+                                    <img src="{% static 'images/cafe toit.png' %}" alt="" height="160"><br>
+                                    <div class="lec_gold">Discover Us</div>
+                                    <div class="lec_slide_subtitle">Play The Video</div>
+                                </div>
+                            </div>
+                            <iframe height="615" src="https://www.youtube.com/embed/BwprbEBgVR4" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="col-md-5 lec_animation_block lec_animation_abs_block lec_posr lec_image_bck" data-bottom-top="transform:translate3d(0px, -80px, 0px)" data-top-bottom="transform:translate3d(0px, 0px, 0px)" data-image="{% static 'images/main_back.jpg' %}">
+
+                            <div class="lec_over" data-color="#000" data-opacity="0.05"></div>
+                            
+                            <div class="lec_parallax_menu lec_image_bck lec_fixed">
+                                <h2 class="lec_gold lec_title_counter">Virtual</h2>
+                                <h3 class="lec_gold_subtitle">For 360 degree View</h3>
+                                <p><a href="https://www.google.com/maps/uv?pb=!1s0x3bae70cdc8999621%3A0xe915f893b0dca0f4!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipNUEfxvXMfCY0LWNDUMwPYOyarmYFzSpnbG8FA6%3Dw432-h200-k-no!5scafe%20toit%20hosur%20-%20Google%20Search!15sCgIgARICCAI&imagekey=!1e10!2sAF1QipOSdSuz4NYPECV585cnDQx2KamH8lJfIvBTF77h&hl=en&sa=X&ved=2ahUKEwjR8db27YTuAhVZzDgGHco-BoUQoiowFXoECBsQAw"
+                                    class="btn btn-outline" target="_blank" 
+                                >Click Here!</a></p>
+
+                                <h3>Contact Info</h3>
+
+                                <div class="row lec_contacts_icons">
+                                    <i class="ti ti-location-pin"></i> 2nd Floor, KK Complex,92/1, Bagalur Rd, above Woodland Showroom, Hosur, Tamil Nadu 635109. <br>
+                                    <i class="ti ti-email"></i> cafetoit.hosur@gmail.com <br>
+                                    <i class="ti ti-mobile"></i> (+91) 98942 37272 <br>
+                                    <i class="ti ti-link"></i> cafetoit.com <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </section>
+    <footer class="lec_image_bck text-center lec_wht_txt" data-image="{% static 'images/main_back_bl.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p><img src="{% static 'images/cafe toit.png' %}" alt="" height="150"></p>
+                    <p>Café Toit is the first rooftop cafe in hosur and till date is the only one. It is built on 2000sq.ft space to give customer spacious look.
+                    </p>
+                    <div class="lec_footer_social">
+                        <div data-animation="animation_blocks" data-bottom="@class:noactive" data--100-bottom="@class:active">
+                            <a href="https://www.facebook.com/cafeToit/"><i class="ti ti-facebook lec_icon_box"></i></a>
+                            <a href="https://www.instagram.com/cafe_toit/"><i class="ti ti-instagram lec_icon_box"></i></a>
+                            <a href="https://twitter.com/CafetoitH"><i class="ti ti-twitter lec_icon_box"></i></a>
+                        </div>
+                    </div>
+                    <p>© CAFE TIOT 2017</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script>
+function initMap() {
+  // The location of Uluru
+  const uluru = { lat: 12.74105, lng: 77.83208 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: uluru,
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
+}
+</script>
+<script src="{% static 'js/jquery-1.12.4.min.js' %}"></script> 
+<script src="{% static 'js/lecker_library.js' %}"></script> 
+<script src="{% static 'js/lecker_script.js' %}"></script>
+</body>
+</html>

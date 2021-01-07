@@ -1,0 +1,149 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecker Restaurant Template</title>
+<link href="{% static 'css/lecker_library.css' %}" rel="stylesheet">
+<link href="{% static 'fonts/themify-icons.css' %}" rel="stylesheet">
+<link href="{% static 'fonts/selima/stylesheet.css' %}" rel="stylesheet">
+<link href="{% static 'css/lecker_style.css' %}" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lato" rel="stylesheet">
+</head>
+<body class="lec_france">
+<div class="lec_page" id="lec_page">
+    <a href="#lec_page" class="lec_top lec_go"><b class="ti ti-angle-up"></b></a>
+    <header>    
+        <div class="container">   
+            <a href="http://lecker.maskandesign.com/" class="lec_logo">CAFE TOIT <i><span>THE ROOF TOP</span><span>GARDEN CAFE</span></i></a>
+            <div class="lec_main_menu">
+                
+                <div class="lec_main_menu_icon">
+                    <i></i><i></i><i></i><i></i>
+                    <b>Menu</b>
+                    <b class="lec_main_menu_icon_b">Back</b>
+                </div>
+            </div>
+
+            <div class="lec_main_menu_content lec_image_bck" data-color="rgba(0,0,0,0.9)" data-image="{% static 'images/resta/shutterstock_384835423.jpg' %}">
+                <div class="lec_over" data-color="#000" data-opacity="0.8"></div>
+            </div>
+
+            <div class="lec_main_menu_content_menu lec_wht_txt text-right">
+                <div class="container">
+                    <ul>
+                        <a href="{% url 'home' %}">Home</a>
+                        <a href="{% url 'about' %}">About</a>
+                        <a href="{% url 'menu' %}">Menu</a>
+                        <a href="{% url 'service' %}">Service</a>
+                        <li class="lec_parent"><a href="#">Blog</a></li>
+                        <li class="lec_parent"><a href="#">Event & Offer</a></li>
+                        <a href="{% url 'contact' %}">Contact</a>
+                    </ul>
+                    <div class="lec_main_menu_content_menu_copy">
+                        <p>© CAFETIOT 2017</p>
+                        <div class="lec_footer_social">
+                            <a href="https://www.facebook.com/cafeToit/"><i class="ti ti-facebook lec_icon_box"></i></a>
+                            <a href="https://www.instagram.com/cafe_toit/"><i class="ti ti-instagram lec_icon_box"></i></a>
+                            <a href="https://twitter.com/CafetoitH"><i class="ti ti-twitter lec_icon_box"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="lec_slider lec_slider_inside lec_image_bck lec_fixed lec_wht_txt" data-stellar-background-ratio="0.3" data-image="{% static 'images/resta/shutterstock_429510046.jpg' %}">
+        <div class="lec_slider_firefly" data-total="30" data-min="1" data-max="3"></div>
+        <div class="lec_over" data-color="#000" data-opacity="0.8"></div>
+        <div class="container">
+            <div class="lec_slide_txt lec_slide_center_middle text-center">
+                <img src="{% static 'images/cafe toit.png' %}" alt="" height="180"><br>
+                <div class="lec_gold">Services</div>
+                <div class="lec_slide_subtitle">CAFE TOIT <br> THE ROOF TOP GARDEN CAFE</div>
+            </div>
+        </div>
+    </div>
+    <section id="lec_content" class="lec_content">
+        <section class="lec_section lec_section_no_overlay" id="catering">
+                <div class="lec_over" data-color="#333" data-opacity="0.05"></div>
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-md-10 lec_animation_block" data-bottom-top="transform:translate3d(0px, 80px, 0px)" data-top-bottom="transform:translate3d(0px, -80px, 0px)">
+                            <img src="{% static 'images/walk1.jpg' %}" alt="" height="600" width="100%">
+                        </div>
+                        <div class="col-md-5 lec_animation_block lec_animation_abs_block lec_posr lec_image_bck" data-bottom-top="transform:translate3d(0px, 0px, 0px)" data-top-bottom="transform:translate3d(0px, 80px, 0px)" data-image="{% static 'images/main_back.jpg' %}">
+                            <div class="lec_over" data-color="#000" data-opacity="0.05"></div>
+
+                            <div class="lec_parallax_menu lec_image_bck lec_fixed">
+                                <h2 class="lec_gold lec_title_counter">WALK-IN</h2>
+                                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p><p> <a href="{% url 'menu' %}" style="text-decoration:none;">View Our Catering Menu</a></p>
+                                <p><img src="{% static 'images/cafe toit.png' %}" height="100" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--2nd-->
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-md-10 lec_animation_block" data-bottom-top="transform:translate3d(0px, 80px, 0px)" data-top-bottom="transform:translate3d(0px, -80px, 0px)">
+                            <img src="{% static 'images/de2.jpeg' %}" alt="" width="100%" height="600">
+                        </div>
+                        <div class="col-md-5 lec_animation_block lec_animation_abs_block lec_posr lec_image_bck" data-bottom-top="transform:translate3d(0px, 0px, 0px)" data-top-bottom="transform:translate3d(0px, 80px, 0px)" data-image="{% static 'images/main_back.jpg' %}">
+                            <div class="lec_over" data-color="#000" data-opacity="0.05"></div>
+
+                            <div class="lec_parallax_menu lec_image_bck lec_fixed">
+                                <h2 class="lec_gold lec_title_counter">FASTEST DELIVERY</h2>
+                                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p><p><a href="https://www.zomato.com/hosur/cafe-toit-hosur-locality/order" class="btn btn-success" style="background-color:transparent;font-size:20px;color:black;border:1px solid darkorange;border-radius:0;">Order Now <i class="ti ti-shopping-cart" style="color:darkorange;"></i></a> <a href="{% url 'menu' %}" class="btn btn-success" style="font-size:20px;background-color:transparent;border: 1px solid black;color:black;">Menu <i class="ti ti-list" style="color:black;"></i></a></p>
+                                <p><img src="{% static 'images/cafe toit.png' %}" height="100" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+                <!--3rd-->
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-md-10 lec_animation_block" data-bottom-top="transform:translate3d(0px, 80px, 0px)" data-top-bottom="transform:translate3d(0px, -80px, 0px)">
+                            <img src="{% static 'images/p1.jpg' %}" alt="" width="100%" height="510">
+                        </div>
+                        <div class="col-md-5 lec_animation_block lec_animation_abs_block lec_posr lec_image_bck" data-bottom-top="transform:translate3d(0px, 0px, 0px)" data-top-bottom="transform:translate3d(0px, 80px, 0px)" data-image="{% static 'images/main_back.jpg' %}">
+                            <div class="lec_over" data-color="#000" data-opacity="0.05"></div>
+
+                            <div class="lec_parallax_menu lec_image_bck lec_fixed">
+                                <h2 class="lec_gold lec_title_counter">PARTY</h2>
+                                <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic.</p>
+                                <p><img src="{% static 'images/cafe toit.png' %}" height="100" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+        </section>
+    </section>
+    <footer class="lec_image_bck text-center lec_wht_txt" data-image="{% static 'images/main_back_bl.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p><img src="{% static 'images/cafe toit.png' %}" alt="" height="150"></p>
+                    <p>Visa, MasterCard and restaurant vouchers. <br>
+                    Transaction fee for payments by CC or food checks. <br>
+                    No Bancontact.
+                    </p>
+                    <div class="lec_footer_social">
+                        <div data-animation="animation_blocks" data-bottom="@class:noactive" data--100-bottom="@class:active">
+                            <a href="https://www.facebook.com/cafeToit/"><i class="ti ti-facebook lec_icon_box"></i></a>
+                            <a href="https://www.instagram.com/cafe_toit/"><i class="ti ti-instagram lec_icon_box"></i></a>
+                            <a href="https://twitter.com/CafetoitH"><i class="ti ti-twitter lec_icon_box"></i></a>
+                        </div>
+                    </div>
+                    <p>© CAFETIOT 2017</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="{% static 'js/jquery-1.12.4.min.js' %}"></script> 
+<script src="{% static 'js/lecker_library.js' %}"></script> 
+<script src="{% static 'js/lecker_script.js' %}"></script>
+</body>
+</html>

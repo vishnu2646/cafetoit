@@ -1,0 +1,699 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe Tiot</title>
+<link href="{% static 'css/lecker_library.css' %} " rel="stylesheet" type="text/css">
+<link href="{% static 'fonts/themify-icons.css' %} " rel="stylesheet" type="text/css">
+<link href="{% static 'fonts/selima/stylesheet.css' %} " rel="stylesheet">
+<link href="{% static 'css/lecker_style.css' %} " rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lato" rel="stylesheet">
+</head>
+<body class="lec_france">
+<div class="lec_page lec_page_fire" id="lec_page">
+    <a href="#lec_page" class="lec_top lec_go"><b class="ti ti-angle-up"></b></a>
+    <header>  
+        <div class="container">   
+            <a href="http://lecker.maskandesign.com/" class="lec_logo">CAFE TOIT <i><span>THE ROOF TOP</span><span>GARDEN CAFE</span></i></a>
+            <div class="lec_main_menu">
+                <div class="lec_main_menu_icon">
+                    <i></i><i></i><i></i><i></i>
+                    <b>Menu</b>
+                    <b class="lec_main_menu_icon_b">Back</b>
+                </div>
+            </div>
+            <div class="lec_main_menu_content lec_image_bck" data-color="rgba(0,0,0,0.9)" data-image="{% static 'images/resta/shutterstock_384835423.jpg' %}">
+                <div class="lec_over" data-color="#000" data-opacity="0.8"></div>
+            </div>
+
+            <div class="lec_main_menu_content_menu lec_wht_txt text-right">
+                <div class="container">
+                    <ul>
+                        <a href="{% url 'home' %}">Home</a>
+                        <a href="{% url 'about' %}">About</a>
+                        <a href="{% url 'menu' %}">Menu</a>
+                        <a href="{% url 'service' %}">Service</a>
+                        <li class="lec_parent"><a href="#">Blog</a></li>
+                        <li class="lec_parent"><a href="#">Event & Offer</a></li>
+                        <a href="{% url 'contact' %}">Contact</a>
+                    </ul>
+                    <div class="lec_main_menu_content_menu_copy">
+                        <p>© Cafe Tiot 2017</p>
+                        <div class="lec_footer_social">
+                            <a href="https://www.facebook.com/cafeToit/"><i class="ti ti-facebook lec_icon_box"></i></a>
+                            <a href="https://www.instagram.com/cafe_toit/"><i class="ti ti-instagram lec_icon_box"></i></a>
+                            <a href="https://twitter.com/CafetoitH"><i class="ti ti-twitter lec_icon_box"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="lec_slider lec_image_bck lec_fixed lec_wht_txt" data-stellar-background-ratio="0.3" data-image="{% static 'images/slider/sl5.jpg' %}">
+        <div class="lec_slider_firefly" data-total="30" data-min="1" data-max="3"></div>
+        <div class="lec_over" data-color="#000" data-opacity="0.8"></div>
+        <div class="container">
+            <div class="lec_slide_txt lec_slide_center_middle text-center">
+                <img src="{% static 'images/cafe toit.png' %}" alt="" height="180"><br>
+                <div class="lec_gold">One Pound Steak</div>
+                <div class="lec_slide_subtitle">THE ROOF TOP<br>GARDEN CAFE</div>
+                <div class="buttons">
+                    <a href="https://www.zomato.com/hosur/cafe-toit-hosur-locality/order" class="btn btn-success" style="background-color:transparent;font-size:20px;color:white;border:1px solid burlywood;border-radius:0;">Order Now <i class="ti ti-shopping-cart"></i></a> <a href="{% url 'menu' %}" class="btn btn-success" style="font-size:20px;background-color: transparent;border: 1px solid white;">Menu <i class="ti ti-list" style="color:white;"></i></a>
+                </div>
+            </div>
+        </div>
+        <a class="lec_scroll_down lec_go" href="#lec_content">
+            <b></b>
+            <i class="ti ti-angle-double-down"></i>
+        </a>
+    </div>
+    <section id="lec_content" class="lec_content">
+        <section class="lec_section lec_section_no_overlay" id="catering">
+                <div class="lec_over" data-color="#333" data-opacity="0.05"></div>
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-md-10 lec_animation_block" data-bottom-top="transform:translate3d(0px, 80px, 0px)" data-top-bottom="transform:translate3d(0px, -80px, 0px)">
+                            <img src="{% static 'images/brownie.jpeg' %}" alt="">
+                        </div>
+                        <div class="col-md-5 lec_animation_block lec_animation_abs_block lec_posr lec_image_bck" data-bottom-top="transform:translate3d(0px, 0px, 0px)" data-top-bottom="transform:translate3d(0px, 80px, 0px)" data-image="{% static 'images/main_back.jpg' %}">
+                            <div class="lec_over" data-color="#000" data-opacity="0.08"></div>
+                            <div class="lec_parallax_menu lec_image_bck lec_fixed">
+                                <p class="lec_gold lec_title_counter" style="font-size:10px;">TopSellers</p>
+                                <h3 class="lec_gold_subtitle">Let Us Cater Your Next Event</h3>
+                                <p>we serve wide variety of dishes and the most favourites are our top sellings.</p>
+                                <p><img src="{% static 'images/cafe toit.png' %}" height="100" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="lec_section lec_image_bck lec_fixed lec_section_no_overlay lec_wht_txt" data-stellar-background-ratio="0.2" data-image="{% static 'images/slider/sl13.jpg' %}" id="specials">
+            <div class="lec_over" data-color="#000" data-opacity="0.8"></div>
+            <div class="container text-center">
+                <h2 class="lec_gold lec_title_counter">Daily Specials</h2>
+                <h3 class="lec_gold_subtitle">Let Us Cater <br>Your Next Event</h3>
+                <div class="lec_icon_boxes lec_team_slider">
+                    <div class="lec_news_block text-center">
+                        <span class="lec_news_img_parent"><span class="lec_news_img lec_image_bck" data-image="{% static 'images/news/sl1.jpg' %}"></span></span>
+                        <span class="lec_gold lec_title_animation lec_wht_txt">Monday</span>
+                        <span class="lec_news_title lec_gold_subtitle">Moink ball Monday</span>
+                        <p>Moink balls are only $0.50 each! Eat one or eat twenty!</p>  
+                    </div>
+
+                    <div class="lec_news_block text-center">
+                        <span class="lec_news_img_parent"><span class="lec_news_img lec_image_bck" data-image="{% static 'images/news/sl2.jpg' %}"></span></span>
+                        <span class="lec_gold lec_title_animation lec_wht_txt">Thuesday</span>
+                        <span class="lec_news_title lec_gold_subtitle">Try It Thuesday</span>
+                        <p>We smoke it, you try it! Every Tuesday Bear picks something different to serve that isn’t normally on our menu.</p>  
+                    </div>
+
+                    <div class="lec_news_block text-center">
+                        <span class="lec_news_img_parent"><span class="lec_news_img lec_image_bck" data-image="{% static 'images/news/sl3.jpg' %}"></span></span>
+                        <span class="lec_gold lec_title_animation lec_wht_txt">Wednesday</span>
+                        <span class="lec_news_title lec_gold_subtitle">Wing Wednesday</span>
+                        <p>50¢ wings all day! Buy one or buy a dozen to share (or not).</p>  
+                    </div>
+
+                    <div class="lec_news_block text-center">
+                        <span class="lec_news_img_parent"><span class="lec_news_img lec_image_bck" data-image="{% static 'images/news/sl4.jpg' %}"></span></span>
+                        <span class="lec_gold lec_title_animation lec_wht_txt">Thursday</span>
+                        <span class="lec_news_title lec_gold_subtitle">BBQ Bowl Thursday</span>
+                        <p>$1.00 off our delicious BBQ Bowl! Cornbread topped with beans and your choice of meat.</p>  
+                    </div>
+
+                    <div class="lec_news_block text-center">
+                        <span class="lec_news_img_parent"><span class="lec_news_img lec_image_bck" data-image="{% static 'images/news/sl5.jpg' %}"></span></span>
+                        <span class="lec_gold lec_title_animation lec_wht_txt">Friday</span>
+                        <span class="lec_news_title lec_gold_subtitle">Mac Attack Friday</span>
+                        <p>End your work week by getting $1.00 off a Mac Attack with your choice of meat!</p>  
+                    </div>
+
+                    <div class="lec_news_block text-center">
+                        <span class="lec_news_img_parent"><span class="lec_news_img lec_image_bck" data-image="{% static 'images/news/sl6.jpg' %}"></span></span>
+                        <span class="lec_gold lec_title_animation lec_wht_txt">Sat Sun</span>
+                        <span class="lec_news_title lec_gold_subtitle">Beef Ribs Sat & Sun</span>
+                        <p>Get your bear sized beef ribs on Saturday and Sunday only! Come early, ribs are limited.</p>  
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="lec_section" id="products">
+            <div class="container-fluid text-center">
+                <h2 class="lec_gold lec_title_counter">Dishes of the Day</h2>
+                <h3 class="lec_gold_subtitle">Let Us Cater <br>Your Next Event</h3>
+                <div class="lec_slider_single lec_wht_txt lec_lm_type_i" data-dots="true" data-autoplay="true">
+                    
+                    <div class="lec_lm_type_i_item">
+                        <img src="{% static 'images/im1.jpeg' %}" alt="" height="880" width="100%">
+                        
+                        <div class="lec_lm_type_i_item_desc lec_image_bck text-left" data-bottom-top="transform:translate3d(0px, 0px, 0px)" data-top-bottom="transform:translate3d(0px, -50px, 0px)" data-image="{% static 'images/main_back_bl.jpg' %}">
+  
+                            <div class="lec_lm_type_i_item_desc_cont">
+                                <h3 class="lec_gold">ROYAL FALOODA</h3>
+                                <div class="lec_lm_type_i_item_price">$8.95</div>
+                                <p>Fried Chicken Tenders with Pickles and Honey Mustard</p>
+                                <h4>Composition</h4>
+                                <p class="lec_lm_type_i_item_ingr">(Feeds 4-5) ½ Rack Ribs, 8oz Pork, 8oz Brisket, ½ Chicken, 3 pints of Sides</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="lec_lm_type_i_item">
+                        <img src="{% static 'images/im2.jpeg' %}" alt="" height="880" width="100%">
+                        
+                        <div class="lec_lm_type_i_item_desc lec_image_bck text-left" data-bottom-top="transform:translate3d(0px, 0px, 0px)" data-top-bottom="transform:translate3d(0px, -50px, 0px)" data-image="{% static 'images/main_back_bl.jpg' %}">
+  
+                            <div class="lec_lm_type_i_item_desc_cont">
+                                <h3 class="lec_gold">FRIEDICE CREAM</h3>
+                                <div class="lec_lm_type_i_item_price">$10.25</div>
+                                <p>2 Marinated Chicken Breasts on the Flattop Grill and Served with White Bread. Includes 2 sides.</p>
+                                <h4>Composition</h4>
+                                <p class="lec_lm_type_i_item_ingr">(Feeds 2-3) 4 Bones, 6oz Pork, 6oz Brisket. Choice of 3 sides</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="lec_lm_type_i_item">
+                        <img src="{% static 'images/im3.jpeg' %}" alt="" height="880" width="100%">
+                        
+                        <div class="lec_lm_type_i_item_desc lec_image_bck text-left" data-bottom-top="transform:translate3d(0px, 0px, 0px)" data-top-bottom="transform:translate3d(0px, -50px, 0px)" data-image="{% static 'images/main_back_bl.jpg' %}">
+  
+                            <div class="lec_lm_type_i_item_desc_cont">
+                                <h3 class="lec_gold">KABAB</h3>
+                                <div class="lec_lm_type_i_item_price">$13.95</div>
+                                <p>Mississippi Farm Raised Catfish with White Onions and Served with a Couple of Hushpuppies. Includes 2 sides.</p>
+                                <h4>Composition</h4>
+                                <p class="lec_lm_type_i_item_ingr">(Feeds 1-2) 4 Bones, 6oz Brisket, Choice of 2 Sides</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="lec_lm_type_i_item">
+                        <img src="{% static 'images/im5.jpeg' %}" alt="" height="880" width="100%">
+                        
+                        <div class="lec_lm_type_i_item_desc lec_image_bck text-left" data-bottom-top="transform:translate3d(0px, 0px, 0px)" data-top-bottom="transform:translate3d(0px, -50px, 0px)" data-image="{% static 'images/main_back_bl.jpg' %}">
+  
+                            <div class="lec_lm_type_i_item_desc_cont">
+                                <h3 class="lec_gold">CAFE TIOT SPECIAL SHAKE</h3>
+                                <div class="lec_lm_type_i_item_price">$13.95</div>
+                                <p>Mississippi Farm Raised Catfish with White Onions and Served with a Couple of Hushpuppies. Includes 2 sides.</p>
+                                <h4>Composition</h4>
+                                <p class="lec_lm_type_i_item_ingr">(Feeds 1-2) 4 Bones, 6oz Brisket, Choice of 2 Sides</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lec_lm_type_i_item">
+                        <img src="{% static 'images/c5.jpeg' %}" alt="" height="880" width="100%">
+                        
+                        <div class="lec_lm_type_i_item_desc lec_image_bck text-left" data-bottom-top="transform:translate3d(0px, 0px, 0px)" data-top-bottom="transform:translate3d(0px, -50px, 0px)" data-image="{% static 'images/main_back_bl.jpg' %}">
+  
+                            <div class="lec_lm_type_i_item_desc_cont">
+                                <h3 class="lec_gold">BUCKET OF CHICKEN</h3>
+                                <div class="lec_lm_type_i_item_price">$13.95</div>
+                                <p>Mississippi Farm Raised Catfish with White Onions and Served with a Couple of Hushpuppies. Includes 2 sides.</p>
+                                <h4>Composition</h4>
+                                <p class="lec_lm_type_i_item_ingr">(Feeds 1-2) 4 Bones, 6oz Brisket, Choice of 2 Sides</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="lec_section lec_section_no_overlay">
+                <div class="container text-center">
+                    <h2 class="lec_gold lec_title_counter">Other Menu</h2>
+                    <h3 class="lec_gold_subtitle">Combos & Trays</h3>
+                    <div class="row row_mb_100 text-left">
+                        <div class="col-md-9 lec_animation_block" data-bottom-top="transform:translate3d(0px, 0px, 0px)" data-top-bottom="transform:translate3d(0px, -80px, 0px)">
+                            <img src="{% static 'images/menu/combo.jpeg' %}" alt="">
+                        </div>
+
+                        <div class="col-md-5 lec_animation_block lec_animation_abs_block lec_posr lec_image_bck" data-bottom-top="transform:translate3d(0px, 0px, 0px)" data-top-bottom="transform:translate3d(0px, 80px, 0px)" data-image="{% static 'images/main_back.jpg' %}">
+
+                            <div class="lec_over" data-color="#000" data-opacity="0.04"></div>
+
+                            <div class="lec_parallax_menu lec_image_bck lec_fixed">
+                                <h2 class="lec_gold lec_title_counter">Combos</h2>
+                                
+                                <div class="lec_parallax_menu_mini lec_parallax_menu_mini_feaut">
+                                    <div class="lec_parallax_menu_mini_title clearfix">
+                                        <h3>BUCKET OF VEG</h3>
+                                        <div class="lec_menu_spacer"></div>
+                                        <div class="lec_parallax_menu_mini_price">&#8377; 199</div>
+                                    </div>
+                                    <p>(Veg Burger + chips + 250 ml Anysoft drink upon availability)</p>
+                                </div>
+
+                                <div class="lec_parallax_menu_mini">
+                                    <div class="lec_parallax_menu_mini_title clearfix">
+                                        <h3>Pizza Combo</h3>
+                                        <div class="lec_menu_spacer"></div>
+                                        <div class="lec_parallax_menu_mini_price">&#8377; 190</div>
+                                    </div>
+                                    <p>(Pepperoni Pzza + Chips + 250 ml ofany sot drink upon availability)</p>
+                                </div>  
+
+                                <div class="lec_parallax_menu_mini">
+                                    <div class="lec_parallax_menu_mini_title clearfix">
+                                        <h3>Sandwich Combo I</h3>
+                                        <div class="lec_menu_spacer"></div>
+                                        <div class="lec_parallax_menu_mini_price">&#8377; 130</div>
+                                    </div>
+                                    <p>(Egg sandwich +chips + 250 ml anysoft drink upon availability)</p>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row text-left">
+
+                        <div class="col-md-5 lec_animation_block lec_animation_abs_block lec_posl lec_image_bck" data-bottom-top="transform:translate3d(0px, 0px, 0px)" data-top-bottom="transform:translate3d(0px, -80px, 0px)" data-image="{% static 'images/main_back.jpg' %} ">
+
+                            <div class="lec_over" data-color="#000" data-opacity="0.04"></div>
+                            <div class="lec_parallax_menu lec_image_bck lec_fixed">
+                                
+                                <h2 class="lec_gold lec_title_counter">Trays</h2>
+                                
+                                <div class="lec_parallax_menu_mini">
+                                    <div class="lec_parallax_menu_mini_title clearfix">
+                                        <h3>WHOLE HOG</h3>
+                                        <div class="lec_menu_spacer"></div>
+                                        <div class="lec_parallax_menu_mini_price">$10.95</div>
+                                    </div>      
+                                </div>
+
+                                <div class="lec_parallax_menu_mini">
+                                    <div class="lec_parallax_menu_mini_title clearfix">
+                                        <h3>PULLED PORK SHOULDER</h3>
+                                        <div class="lec_menu_spacer"></div>
+                                        <div class="lec_parallax_menu_mini_price">$9.95</div>
+                                    </div>      
+                                </div>
+
+                                <div class="lec_parallax_menu_mini">
+                                    <div class="lec_parallax_menu_mini_title clearfix">
+                                        <h3>BEEF BRISKET</h3>
+                                        <div class="lec_menu_spacer"></div>
+                                        <div class="lec_parallax_menu_mini_price">$18.95</div>
+                                    </div>      
+                                </div>
+
+                                <div class="lec_parallax_menu_mini">
+                                    <div class="lec_parallax_menu_mini_title clearfix">
+                                        <h3>SMOKED TURKEY</h3>
+                                        <div class="lec_menu_spacer"></div>
+                                        <div class="lec_parallax_menu_mini_price">$15.95</div>
+                                    </div>      
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-md-offset-4 lec_animation_block" data-bottom-top="transform:translate3d(0px, 0px, 0px)" data-top-bottom="transform:translate3d(0px, 80px, 0px)">
+                            <img src="{% static 'images/burger/shutterstock_253135366.jpg' %}" alt="">
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+        <section class="lec_section lec_image_bck lec_wht_txt lec_fixed" data-stellar-background-ratio="0.2" data-image="{% static 'images/black-1072366_1920.jpg' %} ">
+            <div class="lec_over" data-color="#000" data-opacity="0.8"></div>
+            <div class="container text-center">
+                <h2 class="lec_gold lec_title_counter">Shop</h2>
+                <h3 class="lec_gold_subtitle">FROM THE KITCHEN</h3>
+                <div class="row">
+                        <div class="col-md-4 lec_anim_box">
+                            <div class="lec_shop_item">
+                                <span class="lec_shop_item_slider">
+                                    <img src="{% static 'images/burger/b2.png' %}" alt="">
+                                </span>
+                                <a href="#" class="lec_shop_item_title lec_gold_subtitle">
+                                    CHEESEBURGER
+                                    <b>$8.95</b>
+                                </a>
+
+                                <div class="lec_shop_item_links">
+                                    <a href="#shop">Buy It</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 lec_anim_box">
+                            <div class="lec_shop_item">
+                                <span class="lec_shop_item_slider">
+                                    <img src="{% static 'images/burger/b4.png' %}" alt="">
+                                </span>
+                                <a href="#" class="lec_shop_item_title lec_gold_subtitle">
+                                    BRISKET BURGER
+                                    <b>$9.95</b>
+                                </a>
+                                <div class="lec_shop_item_links">
+                                    <a href="#shop">Buy It</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 lec_anim_box">
+                            <div class="lec_shop_item">
+                                <span class="lec_shop_item_slider">
+                                    <img src="{% static 'images/burger/b3.png' %}" alt="">
+                                </span>
+                                <a href="#" class="lec_shop_item_title lec_gold_subtitle">
+                                    DIXIE BURGER
+                                    <b>$8.95</b>
+                                </a>
+                                <div class="lec_shop_item_links">
+                                    <a href="#shop">Buy It</a>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section class="lec_section lec_section_no_overlay">
+                <div class="lec_over" data-color="#333" data-opacity="0"></div>
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-md-9 lec_animation_block lec_map_hidden_top" data-bottom-top="transform:translate3d(0px, 80px, 0px)" data-top-bottom="transform:translate3d(0px, -80px, 0px)">
+                            <div class="lec_map_container">
+                                <iframe width="781" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=cafetoit&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            </div>
+                        </div>
+
+                        <div class="col-md-5 lec_animation_block lec_animation_abs_block lec_posr lec_image_bck" data-bottom-top="transform:translate3d(0px, 0px, 0px)" data-top-bottom="transform:translate3d(0px, 80px, 0px)" data-image="{% static 'images/main_back.jpg' %}">
+                            <div class="lec_over" data-color="#000" data-opacity="0.08"></div>
+                            <div class="lec_parallax_menu lec_image_bck lec_fixed">
+                                <h2 class="lec_gold lec_title_counter">Directions</h2>
+                                <h3 class="lec_gold_subtitle">Our Cafe Toit Locations</h3>
+                                <p>Cafe Tiot Restaurant is located in above Woodland Showroom.</p>
+                                <a href="{% url 'contact' %}" class="btn">Contact Cafe Tiot Restaurant <i class="ti ti-email"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="lec_section lec_section_no_overlay" id="story">
+                <div class="lec_over" data-color="#333" data-opacity="0.05"></div>
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-md-10 col-md-offset-2 lec_animation_block" data-bottom-top="transform:translate3d(0px, 80px, 0px)" data-top-bottom="transform:translate3d(0px, -80px, 0px)">
+                            <img src="{% static 'images/im7.jpeg' %}" alt="">
+                        </div>
+                        <div class="col-md-5 lec_animation_block lec_animation_abs_block lec_posl lec_image_bck" data-bottom-top="transform:translate3d(0px, 0px, 0px)" data-top-bottom="transform:translate3d(0px, 80px, 0px)" data-image="{% static 'images/main_back.jpg' %}">
+                            <div class="lec_over" data-color="#000" data-opacity="0.08"></div>
+                            <div class="lec_parallax_menu lec_image_bck lec_fixed">
+                                <h2 class="lec_gold lec_title_counter">Our Story</h2>
+                                <h3 class="lec_gold_subtitle">Discover</h3>
+                                <p>Café Toit is the first rooftop cafe in hosur and till date is the only one. It is built on 2000sq.ft space to give customer spacious look. The tables are arranged in such way considering the privacy of the customers, for kids to play around.</p>
+                                <p>We have also opened up the ambiance for business meetings, short working hours, gatherings, small parties etc. with free Wi-Fi connections.</p>
+                                <img src="{% static 'images/sign.png' %}" height="50" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="lec_section">
+            <div class="container text-center">
+                <a href="https://www.instagram.com/cafe_toit/"><h2 class="lec_gold lec_title_counter">Instagram</h2></a>
+                <h3 class="lec_gold_subtitle">Contact Our Customer<br>Care Team</h3>
+                <div id="instagram-carousel" class="insta_slider clearfix"></div>
+            </div>
+        </section>
+        <section class="lec_section lec_section_lg_pd lec_image_bck lec_fixed lec_wht_txt" data-stellar-background-ratio="0.2" data-image="{% static 'images/slider/sl7.jpg' %}" data-bottom-top="@data-animation:noactive" data-200-bottom="@data-animation:active">
+            <div class="lec_over" data-color="#000" data-opacity="0.8"></div>
+            <div class="container text-center"> 
+                <img src="{% static 'images/cafe toit.png' %}" alt="" height="180"><br>
+                <div class="lec_gold">One Pound Steak</div>
+                <div class="lec_slide_subtitle">CAFE TIOT<br>THE ROOF TOP GARDEN CAFE</div>
+            </div>
+        </section>
+        <section class="lec_section" id="events">
+
+            <div class="container text-center">
+                
+                <h2 class="lec_gold lec_title_counter">Events and News</h2>
+                <h3 class="lec_gold_subtitle">Latest News</h3>
+
+                <div class="lec_icon_boxes lec_team_slider">
+                    
+                    <div class="lec_news_block text-center">
+                        <span class="lec_news_img_parent"><span class="lec_news_img lec_image_bck" data-image="{% static 'images/news/sl1.jpg' %}"></span></span>
+                        <span class="lec_gold lec_title_animation lec_wht_txt">Dec 10</span>
+                        <span class="lec_news_title lec_gold_subtitle">Restaurants win big on election night</span>
+                        <p>Third party delivery players, chains expect election rush...</p>  
+                    </div>
+
+                    <div class="lec_news_block text-center">
+                        <span class="lec_news_img_parent"><span class="lec_news_img lec_image_bck" data-image="{% static 'images/news/sl2.jpg' %}"></span></span>
+                        <span class="lec_gold lec_title_animation lec_wht_txt">Dec 12</span>
+                        <span class="lec_news_title lec_gold_subtitle">Chiles add more than heat to menus</span>
+                        <p>Chefs use capsicum to contribute complexity and depth of flavor...</p>  
+                    </div>
+
+                    <div class="lec_news_block text-center">
+                        <span class="lec_news_img_parent"><span class="lec_news_img lec_image_bck" data-image="{% static 'images/news/sl3.jpg' %}"></span></span>
+                        <span class="lec_gold lec_title_animation lec_wht_txt ">Dec 13</span>
+                        <span class="lec_news_title lec_gold_subtitle">The quiet, early indicator of restaurant-industry problems</span>
+                        <p>Noodles, Papa Murphy’s, Famous Dave’s all recently renegotiated credit agreements...</p>  
+                    </div>
+
+                    <div class="lec_news_block text-center">
+                        <span class="lec_news_img_parent"><span class="lec_news_img lec_image_bck" data-image="{% static 'images/news/sl4.jpg' %}"></span></span>
+                        <span class="lec_gold lec_title_animation lec_wht_txt">Jan 14</span>
+                        <span class="lec_news_title lec_gold_subtitle">Restaurant stocks rebound, at least somewhat</span>
+                        <p>Increase in NRN Restaurant Index doesn’t erase a difficult 2016...</p>  
+                    </div>
+
+                    <div class="lec_news_block text-center">
+                        <span class="lec_news_img_parent"><span class="lec_news_img lec_image_bck" data-image="{% static 'images/news/sl5.jpg' %}"></span></span>
+                        <span class="lec_gold lec_title_animation lec_wht_txt">Jan 16</span>
+                        <span class="lec_news_title lec_gold_subtitle">How can packaging reduce food waste</span>
+                        <p>Food Service Operators Turn to Innovative Food Packaging to Increase Efficiency, Safety and their Bottom Line...</p>  
+                    </div>
+
+                    <div class="lec_news_block text-center">
+                        <span class="lec_news_img_parent"><span class="lec_news_img lec_image_bck" data-image="{% static 'images/news/sl6.jpg' %}"></span></span>
+                        <span class="lec_gold lec_title_animation lec_wht_txt">Jan 18</span>
+                        <span class="lec_news_title lec_gold_subtitle">Restaurant job growth <br>is slowing</span>
+                        <p>After years of rapid expansion, the industry is tempering its hiring...</p>  
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="lec_section lec_image_bck lec_fixed lec_wht_txt" data-stellar-background-ratio="0.2" data-image="{% static 'images/slider/sl13.jpg' %}" data-bottom-top="@data-animation:noactive" data-200-bottom="@data-animation:active">
+            <div class="lec_over" data-color="#000" data-opacity="0.8"></div>
+            <div class="container text-center">
+                <div class="lec_gold">Live Music</div>
+                <div class="lec_slide_title">Harper <br>Australia</div>
+                <div class="lec_slide_subtitle">THURSDAY <br>OCTOBER 27</div>
+                <p><img src="{% static 'images/sign_wh.png' %}" alt="" height="70"></p>
+                <p><img src="{% static 'images/cafe toit.png' %}" alt="" height="150"></p>
+            </div>  
+        </section>
+        <section class="lec_section">
+            <div class="container-fluid text-center">
+                
+                <h2 class="lec_gold lec_title_counter">Gallery</h2>
+                <h3 class="lec_gold_subtitle">Out Best Moments</h3>
+
+                <div class="lec_slider_single lec_wht_txt lec_lm_type_i" data-dots="false" data-autoplay="true">
+                    
+                    <div class="lec_lm_type_i_item">
+                        <img src="{% static 'images/slider/sl1.jpg' %}" alt="">
+                    </div>
+
+                    <div class="lec_lm_type_i_item">
+                        <img src="{% static 'images/slider/sl2.jpg' %}" alt="">
+                    </div>
+
+                    <div class="lec_lm_type_i_item">
+                        <img src="{% static 'images/slider/sl3.jpg' %}" alt="">
+                    </div>
+                </div>
+            </div>  
+        </section>
+        <section class="lec_section lec_section_no_overlay" id="testimonials">
+                <div class="lec_over" data-color="#333" data-opacity="0.05"></div>
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-10 lec_animation_block" data-bottom-top="transform:translate3d(0px, 80px, 0px)" data-top-bottom="transform:translate3d(0px, -80px, 0px)">
+                            <img src="{% static 'images/burger/shutterstock_367470722.jpg' %}" alt="">
+                        </div>
+                        <div class="col-md-7 lec_animation_block lec_animation_abs_block lec_posr lec_image_bck lec_wht_txt" data-bottom-top="transform:translate3d(0px, -80px, 0px)" data-top-bottom="transform:translate3d(0px, 0px, 0px)" data-image="{% static 'images/main_back_bl.jpg' %}">                           
+                            <div class="lec_over" data-color="#333" data-opacity="0.6"></div>
+                            <div class="lec_parallax_menu lec_image_bck lec_fixed text-center">    
+                                <h2 class="lec_gold lec_title_counter">Testimonials</h2>
+                                <div class="lec_reviews_single lec_lm_type_i" data-dots="true" data-autoplay="true">                                
+                                    <div class="lec_reviews_item"> 
+                                        <p>“If you are looking for a casual time to spend with friends , this is the best place to be. A roof top experience that everyone would like. The ambience is quite live. You have music to add up to your mood. You would have variety ranging from Nachos, Pastas, Burger, finger fries, Sandwiches. They also have a good range of tea and coffee . The prices are very much in range. You can find it open even at night hours.”</p>
+                                        <svg class="svg-graphic" width="100" height="100" viewBox="0 0 100 100">
+                                            <g>
+                                               <clipPath id="hexagonal-mask">
+                                                  <polygon id="path-1" points="50 -0.787401575 85.9121161 14.0878839 100.787402 50 85.9121161 85.9121161 50 100.787402 14.0878839 85.9121161 -0.787401575 50 14.0878839 14.0878839 "></polygon>
+                                                  <text></text>
+                                               </clipPath>
+                                            </g> 
+                                             <image clip-path="url(#hexagonal-mask)" height="100px" width="100px" xlink:href="{% static 'images/testimonials/t1.jpg' %}" />
+                                        </svg>
+                                        <strong>Arijeet Bardhan</strong>
+                                    </div>
+                                    <div class="lec_reviews_item"> 
+                                        <p>“Great place to have dinner. Tasty food and excellent service. Nominal pricing. Try out Paneer Sizzler.”</p>
+                                        <svg class="svg-graphic" width="100" height="100" viewBox="0 0 100 100">
+                                             <image clip-path="url(#hexagonal-mask)" height="100px" width="100px" xlink:href="{% static 'images/testimonials/t4.jpg' %}" />
+                                        </svg>
+                                        <strong>Tamilmozhi Gunasekar</strong>
+                                    </div>
+                                    <div class="lec_reviews_item"> 
+                                        <p>“One of the best placesin hosur to eat and hang out.. The sizzlers are amazing.. Im a frequent visitor and the food nevers fails to make me happy 😊 .”</p>
+                                        <svg class="svg-graphic" width="100" height="100" viewBox="0 0 100 100">
+                                             <image clip-path="url(#hexagonal-mask)" height="100px" width="100px" xlink:href="{% static 'images/testimonials/t3.jpg' %}" />
+                                        </svg>
+                                        <strong>Sukanya Rajan</strong>
+                                    </div>
+                                    <div class="lec_reviews_item"> 
+                                        <p>“Woah.First of all the ambiance! Perfect to spend time there. Absolutely loved it.. service❤️ amazing people to serve us and food! Fantastic... great for hosur teens.. loved the food.. just an AMAZING place to make each second precious! #FoodLove #GonnaVisitManyyyTimes❤️ Priya Akka❤️ you re great.”</p>
+                                        <svg class="svg-graphic" width="100" height="100" viewBox="0 0 100 100">
+                                             <image clip-path="url(#hexagonal-mask)" height="100px" width="100px" xlink:href="{% static 'images/testimonials/t2.jpg' %}" />
+                                        </svg>
+                                        <strong>Dikshikaa giridharan</strong>
+                                    </div>
+                                </div>                          
+                            </div>
+                        </div>
+                    </div>
+                </div>                  
+        </section>
+        <section class="lec_section">
+            <div class="container text-center">
+                <h2 class="lec_gold lec_title_counter">Careers</h2>
+                <h3 class="lec_gold_subtitle">Working at Lecker</h3>
+                <p>Thank you for your interest in employment at Lecker! Lecker is committed to providing the best possible climate for maximum development and goal achievement for all employees. Our practice is to treat each employee as an individual.</p>
+                <p><a href="#" class="btn">Read More <i class="ti ti-money"></i></a></p>
+            </div>
+        </section>
+        <section class="lec_section lec_section_no_overlay">
+                <div class="lec_over" data-color="#333" data-opacity="0.05"></div>
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-md-10 lec_animation_block" data-bottom-top="transform:translate3d(0px, 80px, 0px)" data-top-bottom="transform:translate3d(0px, -80px, 0px)">
+                            <img src="{% static 'images/burger/shutterstock_367470722.jpg' %}" alt="">
+                        </div>
+                        <div class="col-md-5 lec_animation_block lec_animation_abs_block lec_posr lec_image_bck" data-bottom-top="transform:translate3d(0px, -80px, 0px)" data-top-bottom="transform:translate3d(0px, 0px, 0px)" data-image="{% static 'images/main_back.jpg' %}">
+                            <div class="lec_over" data-color="#000" data-opacity="0.08"></div>
+                            <div class="lec_parallax_menu lec_image_bck lec_fixed">
+                                <h2 class="lec_gold lec_title_counter">Victory</h2>
+                                <h3 class="lec_gold_subtitle">Award Winning <br>Restaurant</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem distinctio, reprehenderit, odit incidunt, hic ducimus.</p>
+                                <p><img src="{% static 'images/awards.png' %}" alt=""></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!--<section class="lec_section lec_image_bck lec_fixed lec_wht_txt" data-stellar-background-ratio="0.2" data-image="{% static 'images/slider/sl13.jpg' %}" data-bottom-top="@data-animation:noactive" data-200-bottom="@data-animation:active" id="reservation">
+                <div class="lec_over" data-color="#000" data-opacity="0.8"></div>
+                <div class="container text-center">
+                    <h2 class="lec_gold lec_title_counter">Reservation</h2>
+                    <h3 class="lec_gold_subtitle">For a group reservation of 6 people or more, <br>contact us through the online form </h3>
+                    
+                    <div class="row">
+                        <div class="col-md-5 col-md-offset-1">
+                            <p>Book a table</p>
+                            <input type="text" placeholder="Date" class="form-control" >
+                            <input type="text" placeholder="Time" class="form-control" >
+                            <input type="text" placeholder="Party" class="form-control" >
+                        </div>
+
+                        <div class="col-md-5">
+                            <p>Contact Details</p>
+                            <input type="text" placeholder="Name" class="form-control" >
+                            <input type="email" class="form-control" placeholder="Email" >
+                            <input type="text" placeholder="Phone" class="form-control">
+                        </div>
+
+                        <div class="col-md-10 col-md-offset-1">
+                            <textarea class="form-control" placeholder="Message" rows="6"></textarea>
+                        </div>
+                        <div class="col-md-4 col-md-offset-4">
+                            <input type="submit" class="btn" value="Make reservation" >
+                        </div>
+                    </div>
+                </div>
+        </section>-->
+        <section class="lec_section lec_section_no_overlay">
+                <div class="lec_over" data-color="#333" data-opacity="0.05"></div>
+
+                <div class="container text-center">
+
+                    <div class="row">
+                        <div class="col-md-10 lec_animation_block lec_wht_txt" data-bottom-top="transform:translate3d(0px, 80px, 0px)" data-top-bottom="transform:translate3d(0px, -80px, 0px)">
+                            <div class="lec_virtual_close"><i class="ti ti-close"></i></div>
+                            <div class="lec_virtual_play lec_virtual_play_black lec_image_bck">
+
+                                <div class="lec_slide_txt lec_slide_left_middle">
+                                    <img src="{% static 'images/cafe toit.png' %}" alt="" height="160"><br>
+                                    <div class="lec_gold">Discover Us</div>
+                                    <div class="lec_slide_subtitle">Play The Video</div>
+                                </div>
+                            </div>
+
+                            <iframe width="420" height="615" src="https://www.youtube.com/embed/7_86CU6nos8"></iframe>
+                        </div>
+
+                        <div class="col-md-5 lec_animation_block lec_animation_abs_block lec_posr lec_image_bck" data-bottom-top="transform:translate3d(0px, -80px, 0px)" data-top-bottom="transform:translate3d(0px, 0px, 0px)" data-image="{% static 'images/main_back.jpg' %}">
+                            <div class="lec_over" data-color="#000" data-opacity="0.08"></div>
+                            
+                            <div class="lec_parallax_menu lec_image_bck lec_fixed">
+                                <h2 class="lec_gold lec_title_counter">Virtual</h2>
+                                <h3 class="lec_gold_subtitle">Tour</h3>
+                                <h3>Contact Info</h3>
+
+                                <div class="row lec_contacts_icons">
+                                    <i class="ti ti-location-pin"></i> 2nd Floor, KK Complex,92/1, Bagalur Rd, above Woodland Showroom, Hosur, Tamil Nadu 635109. <br>
+                                    <i class="ti ti-email"></i> cafetoit.hosur@gmail.com <br>
+                                    <i class="ti ti-mobile"></i> (+91) 98942 37272 <br>
+                                    <i class="ti ti-link"></i> cafetoit.com <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </section>
+    <footer class="lec_image_bck text-center lec_wht_txt" data-image="{% static 'images/main_back_bl.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p><img src="{% static 'images/cafe toit.png' %}" alt="" height="150"></p>
+                    <p>Visa, MasterCard and restaurant vouchers. <br>
+                    Transaction fee for payments by CC or food checks. <br>
+                    No Bancontact.
+                    </p>
+                    <div class="lec_footer_social">
+                        <div data-animation="animation_blocks" data-bottom="@class:noactive" data--100-bottom="@class:active">
+                            <a href="#"><i class="ti ti-facebook lec_icon_box"></i></a>
+                            <a href="#"><i class="ti ti-instagram lec_icon_box"></i></a>
+                            <a href="#"><i class="ti ti-google lec_icon_box"></i></a>
+                            <a href="#"><i class="ti ti-youtube lec_icon_box"></i></a>
+                            <a href="#"><i class="ti ti-twitter lec_icon_box"></i></a>
+                            <a href="#"><i class="ti ti-pinterest lec_icon_box"></i></a>
+                        </div>
+                    </div>
+                    <p>© CAFE TIOT 2017</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="{% static 'js/jquery-1.12.4.min.js' %} "></script> 
+<script src="{% static 'js/lecker_library.js' %} "></script> 
+<script src="{% static 'js/lecker_script.js' %} "></script>
+</body>
+</html>
