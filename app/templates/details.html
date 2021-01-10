@@ -1,0 +1,131 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<link href="{% static 'css/lecker_library.css' %} " rel="stylesheet">
+<link href="{% static 'fonts/themify-icons.css' %} " rel="stylesheet">
+<link href="{% static 'fonts/selima/stylesheet.css' %} " rel="stylesheet">
+<link href="{% static 'css/lecker_style.css' %} " rel="stylesheet">
+<link href="{% static 'css/gallery.css' %} " rel="stylesheet">
+<link href="{% static 'css/blog.css' %} " rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lato" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+<body class="lec_france">
+<div class="lec_page" id="lec_page">
+    <a href="#lec_page" class="lec_top lec_go"><b class="ti ti-angle-up"></b></a>
+   <header>  
+        <div class="container">   
+            <a href="http://lecker.maskandesign.com/" class="lec_logo">CAFE TOIT <i><span>THE ROOF TOP</span><span>GARDEN CAFE</span></i></a>
+            <div class="lec_main_menu">
+                <div class="lec_main_menu_icon">
+                    <i></i><i></i><i></i><i></i>
+                    <b>Menu</b>
+                    <b class="lec_main_menu_icon_b">Back</b>
+                </div>
+            </div>
+            <div class="lec_main_menu_content lec_image_bck" data-color="rgba(0,0,0,0.9)" data-image="{% static 'images/resta/shutterstock_384835423.jpg' %}">
+                <div class="lec_over" data-color="#000" data-opacity="0.8"></div>
+            </div>
+            <div class="lec_main_menu_content_menu lec_wht_txt text-right">
+                <div class="container">
+                    <ul>
+                        <a href="{% url 'home' %}" style="text-decoration:none;color:white;">Home</a>
+                        <a href="{% url 'about' %}" style="text-decoration:none;color:white;">About</a>
+                        <a href="{% url 'menu' %}" style="text-decoration:none;color:white;">Menu</a>
+                        <a href="{% url 'service' %}" style="text-decoration:none;color:white;">Service</a>
+                        <a href="#" style="text-decoration:none;color:white;">Blog</a>
+                        <a href="#" style="text-decoration:none;color:white;">Event & Offer</a>
+                        <a href="{% url 'contact' %}" style="text-decoration:none;color:white;">Contact</a>
+                    </ul>
+                    <div class="lec_main_menu_content_menu_copy">
+                        <p>© Cafe Tiot 2017</p>
+                        <div class="lec_footer_social">
+                            <a href="https://www.facebook.com/cafeToit/"><i class="ti ti-facebook lec_icon_box"></i></a>
+                            <a href="https://www.instagram.com/cafe_toit/"><i class="ti ti-instagram lec_icon_box"></i></a>
+                            <a href="https://twitter.com/CafetoitH"><i class="ti ti-twitter lec_icon_box"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="lec_slider lec_slider_inside lec_image_bck lec_fixed lec_wht_txt" data-stellar-background-ratio="0.3" data-image="{% static 'images/resta/shutterstock_430097569.jpg' %}">
+        <div class="lec_slider_firefly" data-total="30" data-min="1" data-max="3"></div>
+        <div class="lec_over" data-color="#000" data-opacity="0.8"></div>
+        <div class="container">
+            <div class="lec_slide_txt lec_slide_center_middle text-center">
+                <img src="{% static 'images/cafe toit.png' %}" alt="" height="180"><br>
+                <div class="lec_gold">Blog Details</div>
+                <div class="lec_slide_subtitle">CAFE TOIT <br>The Roof Top Garden Cafe</div>
+            </div>
+        </div>
+    </div>
+    <!--<section id="lec_content" class="lec_content">
+        <section class="lec_section">
+            <div class="container-fluid text-center">
+                <div class="lec_slider_single lec_slider_single_wm lec_wht_txt lec_lm_type_i" data-dots="false" data-autoplay="true">
+                    
+                    <div class="lec_lm_type_i_item">
+                        <img src="images/slider/sl1.jpg" alt="">
+                    </div>
+
+                    <div class="lec_lm_type_i_item">
+                        <img src="images/slider/sl2.jpg" alt="">
+                    </div>
+
+                    <div class="lec_lm_type_i_item">
+                        <img src="images/slider/sl3.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </section> -->
+    <div class="container mt-5" role="main" style="font-size: 22px;">
+        <article class="media content-section">
+        <img class="rounded-circle article-img" src="{{object.image.url}}" alt="">
+            <div class="media-body">
+            <div class="article-metadata">
+                <a class="mr-2" href="#" style="color:#E3CC6F">{{ object.author }}</a>
+                <small class="text-muted">{{ object.date_posted|date:"F d, Y" }}</small>
+            </div>
+            <h2 class="article-title">{{ object.title }}</h2>
+            <p class="article-content">{{ object.content }}</p>
+            </div>
+        </article>
+    </div>
+
+    <footer class="lec_image_bck text-center lec_wht_txt" data-image="{% static 'images/main_back_bl.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p><img src="{% static 'images/cafe toit.png' %}" alt="" height="150"></p>
+                    <p>Visa, MasterCard and restaurant vouchers. <br>
+                    Transaction fee for payments by CC or food checks. <br>
+                    No Bancontact.
+                    </p>
+                    <div class="lec_footer_social">
+                        <div data-animation="animation_blocks" data-bottom="@class:noactive" data--100-bottom="@class:active">
+                            <a href="https://www.facebook.com/cafeToit/"><i class="ti ti-facebook lec_icon_box"></i></a>
+                            <a href="https://www.instagram.com/cafe_toit/"><i class="ti ti-instagram lec_icon_box"></i></a>
+                            <a href="https://twitter.com/CafetoitH"><i class="ti ti-twitter lec_icon_box"></i></a>
+                        </div>
+                    </div>
+                    <p>© Cafe Toit 2017</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="{% static 'js/jquery-1.12.4.min.js' %}"></script> 
+<script src="{% static 'js/lecker_library.js' %}"></script> 
+<script src="{% static 'js/lecker_script.js' %}"></script>
+</body>
+</html>

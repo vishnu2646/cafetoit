@@ -6,4 +6,7 @@ urlpatterns = [
     path('contact/',views.contact,name="contact"),
     path('about/',views.about,name="about"),
     path('service/',views.service,name="service"),
+    path('gallery/',views.GalleryListView.as_view(),name="gallery"),
+    path('blog/',views.PostListView.as_view(),name="blog"),
+    path('detail/<int:pk>/',views.PostDetailView.as_view(),name="detail"),
 ]
