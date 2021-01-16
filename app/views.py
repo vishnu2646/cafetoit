@@ -38,3 +38,6 @@ class PostListView(ListView):
 class PostDetailView(DetailView):
     model = Post
     template_name = 'details.html'
+
+def event(request):
+    return render(request,'event.html')

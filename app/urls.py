@@ -9,4 +9,5 @@ urlpatterns = [
     path('gallery/',views.GalleryListView.as_view(),name="gallery"),
     path('blog/',views.PostListView.as_view(),name="blog"),
     path('detail/<int:pk>/',views.PostDetailView.as_view(),name="detail"),
+    path('event/',views.event,name="event")
 ]

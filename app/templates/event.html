@@ -1,0 +1,169 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lecker Restaurant Template</title>
+<link href="{% static 'css/lecker_library.css' %}" rel="stylesheet">
+<link href="{% static 'fonts/themify-icons.css' %}" rel="stylesheet">
+<link href="{% static 'fonts/selima/stylesheet.css' %}" rel="stylesheet">
+<link href="{% static 'css/lecker_style.css' %}" rel="stylesheet">
+<link href="{% static 'css/event.css' %}" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Lato" rel="stylesheet">
+</head>
+<body class="lec_france">
+<div class="lec_page" id="lec_page">
+    <a href="#lec_page" class="lec_top lec_go"><b class="ti ti-angle-up"></b></a>
+    <header>    
+        <div class="container">   
+            
+            <a href="http://lecker.maskandesign.com/" class="lec_logo">CAFE TOIT <i><span>THE ROOF TOP </span><span>GARDEN CAFE</span></i></a>
+
+            <div class="lec_main_menu">
+                
+                <div class="lec_main_menu_icon">
+                    <i></i><i></i><i></i><i></i>
+                    <b>Menu</b>
+                    <b class="lec_main_menu_icon_b">Back</b>
+                </div>
+            </div>
+
+            <div class="lec_main_menu_content lec_image_bck" data-color="rgba(0,0,0,0.9)" data-image="{% static 'images/resta/shutterstock_384835423.jpg' %}">
+                <div class="lec_over" data-color="#000" data-opacity="0.8"></div>
+            </div>
+
+            <div class="lec_main_menu_content_menu lec_wht_txt text-right">
+                <div class="container">
+                    <ul>
+                        <a href="{% url 'home' %}">Home</a>
+                        <a href="{% url 'about' %}">About</a>
+                        <a href="{% url 'menu' %}">Menu</a>
+                        <a href="{% url 'service' %}">Service</a>
+                        <a href="{% url 'blog' %}">Blog</a>
+                        <a href="{% url 'event' %}">Event & Offer</a>
+                        <a href="{% url 'contact' %}">Contact</a>
+                    </ul>
+                    <div class="lec_main_menu_content_menu_copy">
+                        <p>© CAFE TOIT 2017</p>
+                        <div class="lec_footer_social">
+                            <a href="#"><i class="ti ti-facebook lec_icon_box"></i></a>
+                            <a href="#"><i class="ti ti-instagram lec_icon_box"></i></a>
+                            <a href="#"><i class="ti ti-google lec_icon_box"></i></a>
+                            <a href="#"><i class="ti ti-youtube lec_icon_box"></i></a>
+                            <a href="#"><i class="ti ti-twitter lec_icon_box"></i></a>
+                            <a href="#"><i class="ti ti-pinterest lec_icon_box"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="lec_slider lec_slider_inside lec_image_bck lec_fixed lec_wht_txt" data-stellar-background-ratio="0.3" data-image="{% static 'images/resta/shutterstock_394289380.jpg' %}">
+        <div class="lec_slider_firefly" data-total="30" data-min="1" data-max="3"></div>
+        <div class="lec_over" data-color="#000" data-opacity="0.8"></div>
+        <div class="container">
+            <div class="lec_slide_txt lec_slide_center_middle text-center">
+                <img src="{% static 'images/cafe toit.png' %}" alt="" height="180"><br>
+                <div class="lec_gold">Daily Specials</div>
+                <div class="lec_slide_subtitle">CAFE TOIT <br>THE ROOF TOP GARDEN CAFE</div>
+            </div>
+        </div>
+    </div>
+    <section id="lec_content" class="lec_content">
+        <section class="lec_section lec_section_no_overlay">
+            <div class="container text-center">
+                <div class="lec_icon_boxes lec_team_slider">
+                    
+                    <div class="lec_news_block text-center">
+                        <span class="lec_news_img_parent"><span class="lec_news_img lec_image_bck" data-image="{% static 'images/slider/sl1.jpg' %}"></span></span>
+                        <span class="lec_gold lec_title_animation lec_wht_txt">Monday</span>
+                        <span class="lec_news_title lec_gold_subtitle">Moink ball Monday</span>
+                        <p>Moink balls are only $0.50 each! Eat one or eat twenty!</p>  
+                    </div>
+
+                    <div class="lec_news_block text-center">
+                        <span class="lec_news_img_parent"><span class="lec_news_img lec_image_bck" data-image="{% static 'images/slider/sl2.jpg' %}"></span></span>
+                        <span class="lec_gold lec_title_animation lec_wht_txt">Thuesday</span>
+                        <span class="lec_news_title lec_gold_subtitle">Try It Thuesday</span>
+                        <p>We smoke it, you try it! Every Tuesday Bear picks something different to serve that isn’t normally on our menu.</p>  
+                    </div>
+
+                    <div class="lec_news_block text-center">
+                        <span class="lec_news_img_parent"><span class="lec_news_img lec_image_bck" data-image="{% static 'images/slider/sl3.jpg' %}"></span></span>
+                        <span class="lec_gold lec_title_animation lec_wht_txt">Wednesday</span>
+                        <span class="lec_news_title lec_gold_subtitle">Wing Wednesday</span>
+                        <p>50¢ wings all day! Buy one or buy a dozen to share (or not).</p>  
+                    </div>
+
+                    <div class="lec_news_block text-center">
+                        <span class="lec_news_img_parent"><span class="lec_news_img lec_image_bck" data-image="{% static 'images/slider/sl4.jpg' %}"></span></span>
+                        <span class="lec_gold lec_title_animation lec_wht_txt">Thursday</span>
+                        <span class="lec_news_title lec_gold_subtitle">BBQ Bowl Thursday</span>
+                        <p>$1.00 off our delicious BBQ Bowl! Cornbread topped with beans and your choice of meat.</p>  
+                    </div>
+
+                    <div class="lec_news_block text-center">
+                        <span class="lec_news_img_parent"><span class="lec_news_img lec_image_bck" data-image="{% static 'images/slider/sl5.jpg' %}"></span></span>
+                        <span class="lec_gold lec_title_animation lec_wht_txt">Friday</span>
+                        <span class="lec_news_title lec_gold_subtitle">Mac Attack Friday</span>
+                        <p>End your work week by getting $1.00 off a Mac Attack with your choice of meat!</p>  
+                    </div>
+                    <div class="lec_news_block text-center">
+                        <span class="lec_news_img_parent"><span class="lec_news_img lec_image_bck" data-image="{% static 'images/slider/sl6.jpg' %}"></span></span>
+                        <span class="lec_gold lec_title_animation lec_wht_txt">Sat Sun</span>
+                        <span class="lec_news_title lec_gold_subtitle">Beef Ribs Sat & Sun</span>
+                        <p>Get your bear sized beef ribs on Saturday and Sunday only! Come early, ribs are limited.</p>  
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </section>
+    <div class="container">
+        <div class="flip-box">
+            <div class="flip-box-inner">
+                <div class="flip-box-front">
+                    <img src="{% static 'images/b1.jpeg' %}" alt="Paris" style="width:300px;height:200px">
+                </div>
+                <div class="flip-box-back">
+                    <h2>Paris</h2>
+                    <p>What an amazing city</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="lec_image_bck text-center lec_wht_txt" data-image="{% static 'images/main_back_bl.jpg' %}">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <p><img src="{% static 'images/cafe toit.png' %}" alt="" height="150"></p>
+                    <p>Visa, MasterCard and restaurant vouchers. <br>
+                    Transaction fee for payments by CC or food checks. <br>
+                    No Bancontact.
+                    </p>
+                    <div class="lec_footer_social">
+                        <div data-animation="animation_blocks" data-bottom="@class:noactive" data--100-bottom="@class:active">
+                            <a href="#"><i class="ti ti-facebook lec_icon_box"></i></a>
+                            <a href="#"><i class="ti ti-instagram lec_icon_box"></i></a>
+                            <a href="#"><i class="ti ti-google lec_icon_box"></i></a>
+                            <a href="#"><i class="ti ti-youtube lec_icon_box"></i></a>
+                            <a href="#"><i class="ti ti-twitter lec_icon_box"></i></a>
+                            <a href="#"><i class="ti ti-pinterest lec_icon_box"></i></a>
+                        </div>
+                    </div>
+
+                    <p>© CAFE TOIT 2017</p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="{% static 'js/jquery-1.12.4.min.js' %}"></script> 
+<script src="{% static 'js/lecker_library.js' %}"></script> 
+<script src="{% static 'js/lecker_script.js' %} "></script>
+</body>
+</html>

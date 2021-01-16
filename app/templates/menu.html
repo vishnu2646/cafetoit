@@ -38,8 +38,8 @@
                         <a href="{% url 'about' %}">About</a>
                         <a href="{% url 'menu' %}">Menu</a>
                         <a href="{% url 'service' %}">Service</a>
-                        <li class="lec_parent"><a href="#">Blog</a></li>
-                        <li class="lec_parent"><a href="#">Event & Offer</a></li>
+                        <a href="{% url 'blog' %}">Blog</a>
+                        <a href="{% url 'event' %}">Event & Offer</a>
                         <a href="{% url 'contact' %}">Contact</a>
                     </ul>
                     <div class="lec_main_menu_content_menu_copy">
@@ -212,7 +212,7 @@
                 </div>
                 
         </section>
-        <section class="lec_section lec_image_bck lec_wht_txt lec_fixed" data-stellar-background-ratio="0.2" data-image="{% static 'images/black-1072366_1920.jpg' %}">
+        <!--<section class="lec_section lec_image_bck lec_wht_txt lec_fixed" data-stellar-background-ratio="0.2" data-image="{% static 'images/black-1072366_1920.jpg' %}">
             <div class="lec_over" data-color="#000" data-opacity="0.8"></div>
             
             <div class="container text-center">
@@ -270,7 +270,7 @@
                         </div>
                 </div>
             </div>
-        </section>
+        </section>-->
     </section>
     <footer class="lec_image_bck text-center lec_wht_txt" data-image="{% static 'images/main_back_bl.jpg' %}">
         <div class="container">
